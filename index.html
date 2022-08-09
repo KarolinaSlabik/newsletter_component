@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>newsletter component</title>
+        <link href="css/newsletter.css"rel="stylesheet"></link>
+		<script src="js/newsletter.js"></script>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    </head>
+    <body>
+        <div id="pink_wave">
+            <img src="images/logo.png" id="logo" />
+            <div id="mobile_hero">
+            </div>
+            <h1 id="header">
+                <span id="pink_header">WE'RE</span>
+                <span id="grey_header">COMING SOON</span>
+            </h1>
+            <div id="container_text">
+                <span id="text">
+                    Hello fellow shoppers! We're currently building our new fashion store. 
+                    Add your email below to stay up-to-date with announcements and our launch deals.
+                </span>
+            </div>
+            <form method="post" id="form" onsubmit="return send_form();">
+                <input id="email" placeholder="Email Address" name="email">
+                </input>
+                <input type="submit" id="submit_button" value="" name="submit_button">
+                </input>
+                <img src="images/icon-arrow.png" id="arrow"/>
+                <img src="images/icon-error.png" id="mistakes_icon"/>
+                <span id="error_text">
+                </span>
+            </form>
+        </div>
+        <div id="hero">
+        </div>
+    </body>
+</html>

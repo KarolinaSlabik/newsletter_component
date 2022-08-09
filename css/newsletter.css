@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(135deg, rgba(250,250,250,1) 0%, rgba(255,245,245,1) 100%);
+    height: 969px;
+}
+
+#pink_wave {
+    background-image: url('../images/bg-pattern-desktop.png');
+    width: 60%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+#hero {
+    width: 40%;
+    height: 100%;
+    background-image: url('../images/hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    display: block;
+}
+
+#mobile_hero {
+    background-image: url('../images/hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    top: 65px;
+    height: 250px;
+    display: none;
+}
+
+#logo {
+    width: 170px;
+    height: 40px;
+    position: relative;
+    top: 80px;
+    left: 220px;
+}
+
+#header {
+    width: 420px;
+    height: 225px;
+    display: block;
+    position: relative;
+    top: 200px;
+    left: 220px;
+    line-height: 92px;
+    letter-spacing: 20px;
+}
+
+#grey_header {
+    color: #413a3a;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+#pink_header {
+    font-size: 80px;
+    color: #ce9797;
+    font-weight: 300;
+}
+
+#container_text {
+    width: 430px;
+    height: 100px;
+    position: relative;
+    left: 220px;
+    top: 250px;
+    line-height: 28px;
+}
+
+#text {
+    font-size: 16px;
+    color: #ce9797;
+    font-weight: 400;
+}
+
+#form {
+    width: 430px;
+    height: 75px;
+    left: 220px;
+    display: block;
+    position: relative;
+}
+
+#email {
+    font-family: 'myFont','Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-indent: 30px;
+    color: #413a3a;
+    border-style: solid;
+    border-color: rgba(65, 58, 58, 0.2);
+    border-width: 1px;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 55px;
+    border-radius: 50px;
+    position: relative;
+    display: block;
+    top: 280px;
+}
+
+#email:focus {
+    outline: none;
+}
+
+#submit_button {
+    width: 100px;
+    height: 55px;
+    border-radius: 50px;
+    position: relative;
+    border: none;
+    top: 225px;
+    left: 331px;
+    background: linear-gradient(135deg, rgba(248, 191, 191,1) 0%, rgba(238, 140, 140,1) 100%);
+    box-shadow: 1px 16px 23px rgba(238, 140, 140,0.3);
+}
+
+#arrow {
+    width: 13px;
+    height: 20px;
+    position: relative;
+    top: 209px;
+    left: 271px;
+}
+
+#mistakes_icon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 210px;
+    left: 167px;
+    opacity: 0;
+}
+
+#error_text {
+    color: #F96262;
+    font-size: 14px;
+    position: relative;
+    top: 248px;
+    right: 119px;
+    opacity: 0;
+}
+
+.error_border {
+    border-color: #F96262 !important;
+    border-width: 2px !important;
+}
+
+#submit_button:hover {
+    background: linear-gradient(135deg, rgba(255, 245, 245,1) 0%, rgba(248, 191, 191,1) 100%);
+    box-shadow: 1px 18px 23px rgba(238, 140, 140,0.5);
+}
+
+@media only screen and (max-width: 1127px) {
+    #logo {
+        width: 113px;
+        height: 24px;
+        top: 30px;
+        left: 30px;
+    }
+
+    #hero {
+        display: none;
+    }
+
+    #pink_wave {
+        background-image: none;
+        width: 100%;
+    }
+
+    #mobile_hero {
+        display: block;
+    }
+
+    #header {
+        width: 330px;
+        height: 170px;
+        top: 145px;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 52px;
+        letter-spacing: 11px;
+        text-align: center;
+    }
+
+    #pink_header, #grey_header {
+        font-size: 46px;
+    }
+
+    #container_text {
+        width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        top: 135px;
+        text-align: center;
+    }
+
+    #text {
+        font-size: 15px;
+    }
+
+    #email {
+        font-size: 15px;
+        top: 220px;
+        margin-left: 0;
+        margin-right: 0;
+        left: 0;
+    }
+
+    #submit_button {
+        width: 70px;
+        top: 165px;
+        left: 80%;
+    }
+
+    #arrow {
+        top: 148px;
+        left: 67%;
+    }
+
+    #form {
+        width: 330px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        top: -35px;
+        left: 0;
+    }
+
+    #mistakes_icon {
+        top: 150px;
+        left: 40%;
+    }
+
+    #error_text {
+        font-size: 13px;
+        top: 187px;
+        right: 90px;
+    }
+
+}
+
